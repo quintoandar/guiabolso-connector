@@ -20,5 +20,7 @@ RUN wget -O /opt/app/libs/dd-java-agent.jar "https://repository.sonatype.org/ser
 
 COPY --from=0 /src/application/build/distributions/application-${APP_VERSION}.tar /opt/app/
 
+RUN tar -xf /opt/app/application-${APP_VERSION}.tar -C /opt/app/
+
 EXPOSE 8080
 CMD "/opt/app/application-${APP_VERSION}/bin/application"
