@@ -16,6 +16,9 @@ dataPackages:
       - statusKey: GBCONNECT.FINANCIAL.VARIABLES.STATUS
         eventName: gbconnect:financial:variables
         eventVersion: 1
+      - statusKey: GBCONNECT.INCOME.PROOF.STATUS
+        eventName: gbconnect:income:proof:variables
+        eventVersion: 1
 
 dataCaches:
   - eventName: gbconnect:variables
